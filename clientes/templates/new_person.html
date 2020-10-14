@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+{% block title %} Criar Novo Cliente {% endblock %}
+
+{% block main %}
+
+<h3>Cadastro de novo cliente</h3>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|bootstrap }}
+        <button type="submit" class="btn btn-success">Salvar</button>
+    </form>
+
+{% endblock %}
