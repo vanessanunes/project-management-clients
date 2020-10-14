@@ -1,0 +1,10 @@
+.idea
+.vscode
+
+*.sqlite3
+.vEnv
+*pyc
+.env
+.DS_Store
+
+media/
